@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <title>Table and  List Demo</title>
+    </head>
+    <body>
+    <table border="1">
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td>Sanskrit</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Canbera</td>
+            <td>Englisht</td>
+        </tr>
+
+    </table>
+</body>
+    <table border="2">
+        <thead>
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Language</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td rowsapan="4">
+                <ul>
+                    <li>Sanskrit</li>
+                    <li>Hindi</li>
+                    <li>Marathi</li>
+                    <li>Tamil</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Canbera</td>
+        
+        <td rowsapan="3">
+            <ul>
+                <li>English</li>
+                <li>Chinese</li>
+                <li>Indonatian</li>
+               
+            </ul>
+        </td>
+    </tr>
+    </table>
+
+    <head>
+    <Titel> List</Titel>
+    </head>
+    <body>
+        <p> BreakFaset Menu</p>
+        <ul>
+            <li> Milk</li>
+             <ol type="1">
+                <li>No Cream</li>
+                <dl>
+                    <dd>Desi Cow Milk</dd>
+                </dl>
+                <li>Full cream</li>
+            </ol>
+            <li>Bread</li>
+            <li>Juice</li>
+            <ol type="I">
+                <li>Orange</li>
+                <li>mango</li>
+                <li>Watermelon</li>
+               
+            </ol>
+            <li>Sandwitch</li> 
+            <ol type="A">
+                <li>Grilled</li>
+                <dl>
+                    <dd>Vegan with cheese</dd>
+                </dl>
+                <li>Plain</li>
+                <dl>
+                    <dd>Vegan with/without cheese</dd>
+                </dl>
+            </ol>
+            </ul>
+            <script>
+                function openLinks(){
+                links = document.getElementsByTagName('a');
+                
+                 for (i = 0; i < links.length;i++){ 
+                   window.open(links[i].getAttribute('href'),'_blank');
+                   window.focus();
+                 }
+                }
+                </script>
+                
+                <body onload="openLinks()">
+                
+                <a href="http://google.com">google</a>
+                <a href="http://stackoverflow.com">stackoverflow</a>
+                <a href="http://facebook.com">facebook</a>
+                <!-- add other link -->
+    </body>
+    
+</html>
